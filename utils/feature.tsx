@@ -24,7 +24,7 @@ export const getData = async () => {
     try {
         // Use the fetch API to make a GET request to the specified API endpoint
         const resp = await fetch('https://code-test-chi.vercel.app/api/users', {
-            cache: "no-cache", // Specify caching options
+            next: { revalidate: 0 }
         });
 
         // Parse the response data as JSON
