@@ -1,0 +1,47 @@
+{
+  "name": "code-test",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "test": "jest"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.0.3",
+    "next": "14.0.4"
+  },
+  "devDependencies": {
+    "@jest/globals": "^29.7.0",
+    "@testing-library/jest-dom": "^6.1.6",
+    "@testing-library/react": "^14.1.2",
+    "@testing-library/user-event": "^14.5.1",
+    "@types/bcrypt": "^5.0.2",
+    "@types/cookie": "^0.6.0",
+    "@types/express": "^4.17.21",
+    "@types/jsonwebtoken": "^9.0.5",
+    "@types/mocha": "^10.0.6",
+    "@types/node": "^20",
+    "@types/react": "18.2.29",
+    "@types/react-dom": "18.2.13",
+    "autoprefixer": "^10.4.16",
+    "eslint": "^8",
+    "eslint-config-next": "14.0.4",
+    "eslint-plugin-jest-dom": "^5.1.0",
+    "eslint-plugin-testing-library": "^6.2.0",
+    "fetch-mock-jest": "^1.5.1",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "next": "canary",
+    "postcss": "^8.4.32",
+    "react": "experimental",
+    "react-dom": "experimental",
+    "tailwindcss": "^3.4.0",
+    "ts-jest": "^29.1.1",
+    "typescript": "^5"
+  }
+}
