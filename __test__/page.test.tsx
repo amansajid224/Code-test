@@ -12,7 +12,7 @@ describe('getData function', () => {
 
     it('should return data when the API call is successful', async () => {
         const mockData = [{ _id: 1, fullName: 'Test User', email: "amansajid@gmail.com" }];
-        fetchMock.get('https://code-demo-smoky.vercel.app/api/users', mockData);
+        fetchMock.get('https://code-test-chi.vercel.app/api/users', mockData);
 
         const data = await getData();
 
@@ -20,7 +20,7 @@ describe('getData function', () => {
     });
 
     it('should return an empty array when the API call fails', async () => {
-        fetchMock.get('https://code-demo-smoky.vercel.app/api/users', 500);
+        fetchMock.get('https://code-test-chi.vercel.app/api/users', 500);
 
         const data = await getData();
 
@@ -28,7 +28,7 @@ describe('getData function', () => {
     });
 
     it('should return an empty array when the API call returns no data', async () => {
-        fetchMock.get('https://code-demo-smoky.vercel.app/api/users', null);
+        fetchMock.get('https://code-test-chi.vercel.app/api/users', null);
 
         const data = await getData();
 
